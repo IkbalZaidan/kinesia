@@ -46,6 +46,13 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleAr.css">
+
+    <style>
+        body {
+            direction: rtl !important;
+        }
+    </style>
 
 </head>
 
@@ -220,15 +227,15 @@
                                 </ul>
                             </li>
                             <li>
-                                <!-- Dropdown -->
                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fal fa-globe"></i> English
+                                    <i class="fal fa-globe"></i> العربية
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                    <li><a href="#" id="switchToArabic">Arabic</a></li>
+                                    <li><a href="index.html">الانكليزية</a></li>
                                     <!-- Add ID to the Arabic link -->
                                 </ul>
+
                             </li>
                         </ul>
                     </div>
@@ -492,7 +499,7 @@
                 <div class="col-lg-6 mb-40 mb-lg-0">
                     <div class="vs-surface wow" data-wow-delay="0.3s">
                         <div class="about-img3 position-relative">
-                            <img src="assets/img/hero/bg7.jpg" alt="About Image" class="w-100">
+                            <img src="assets/img/hero/bg3.jpg" alt="About Image" class="w-100">
                             <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4"
                                 class="popup-video play-btn style2 position-center"><i class="fas fa-play"></i></a>
                             <div class="exp-box-bottom bg-white">
@@ -1242,28 +1249,23 @@
     <script src="assets/js/ajax-mail.js"></script>
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
-    <!-- <script>
+    <script>
 
-        // Event listener for changing language to Arabic
-        document.getElementById('switchToArabic').addEventListener('click', function () {
-            document.body.dir = "rtl"; // Set direction to right-to-left
-            document.body.lang = "ar"; // Set language attribute to Arabic
-
-            // Change the text in the dropdown to Arabic
-            document.getElementById('dropdownMenuLink1').innerHTML = `<i class="fal fa-globe"></i> Arabic`;
-
-            // Translate content (example)
-            // translateToArabic();
+        $(document).ready(function () {
+            $('.vs-carousel').slick({
+                rtl: $("body").attr("dir") === "rtl" ? true : false,  // Enable RTL if body direction is RTL
+                slidesToShow: 3,   // Set to 3 slides at once
+                slidesToScroll: 1, // Scroll one slide at a time
+                infinite: true,    // Enable infinite looping
+                dots: true,        // Show navigation dots
+                arrows: true,      // Show next/prev arrows
+                autoplay: true,    // Autoplay the slider
+                autoplaySpeed: 3000 // Slide duration
+            });
         });
 
-        function translateToArabic() {
-            // Example translations: Replace English text with Arabic
-            document.querySelector('h1').textContent = "مرحبا بك في موقعنا"; // Translate heading
-            document.querySelector('p').textContent = "هذه بعض المعلومات باللغة العربية."; // Translate paragraph
-            // Add more translations for other elements as needed
-        }
 
-    </script> -->
+    </script>
 
 </body>
 

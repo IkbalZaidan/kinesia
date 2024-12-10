@@ -1,0 +1,16 @@
+.footer-widget .widget_title:before {
+  right: 0;
+}
+
+.footer-widget.widget_meta a:before,
+.footer-widget.widget_pages a:before,
+.footer-widget.widget_archive a:before,
+.footer-widget.widget_categories a:before,
+.footer-widget.widget_nav_menu a:before {
+  display: inline-block;
+  right: 0;
+  content: "\f30b";
+  font-family: var(--icon-font);
+  margin-inline-end: 10px;
+  transform: rotate(180deg);
+}
