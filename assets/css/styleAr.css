@@ -14,3 +14,61 @@
   margin-inline-end: 10px;
   transform: rotate(180deg);
 }
+
+
+.vs-list li:before, .about-list li:before{
+  right: 0px;
+  left: unset;
+}
+
+.vs-list li, .about-list li {
+  padding-right: 35px;
+  padding-left: 0px;
+}
+
+.list-inline, .list-unstyled{
+  padding-right: 0px;
+}
+
+.head-top-links>li:before{
+  right: unset;
+  left: 0px;
+}
+
+.head-top-links>li{
+  padding-left: 31px;
+  padding-right:0px ;
+}
+
+.head-top-links .dropdown-toggle:after{
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+.text-xl-start {
+  text-align: right !important;
+}
+
+.address-line i{
+  left: unset;
+  right: 0;
+}
+
+.address-line{
+  padding-right: 30px;
+  padding-left: 0;
+}
+
+
+.header-btn:before, .header-call.phone-box:before{
+  left: unset;
+  right: 0;
+}
+
+.header-btn.style2, .header-call.phone-box.style2{
+  padding-right: 30px;
+  margin-right: 0;
+  padding-left: unset;
+  margin-left: unset;
+
+}
