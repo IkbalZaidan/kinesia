@@ -35,7 +35,7 @@
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <!-- Layerslider -->
-    <!-- <link rel="stylesheet" href="assets/css/layerslider.min.css"> -->
+    <link rel="stylesheet" href="assets/css/layerslider.min.css">
     <!-- jQuery DatePicker -->
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <!-- Magnific Popup -->
@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
@@ -226,7 +227,7 @@
                                     <i class="fal fa-globe"></i> English
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                    <li><a href="#" id="switchToArabic">Arabic</a></li>
+                                    <li><a href="indexAr.html" id="switchToArabic">Arabic</a></li>
                                     <!-- Add ID to the Arabic link -->
                                 </ul>
                             </li>
@@ -306,7 +307,7 @@
         <div class="container">
             <div class="row justify-content-center">
 
-                <div class="col-md-12">
+                <div class="col-12">
                     <h1>
 
                         <span class="text-title-primary"> At Kinesia
@@ -563,7 +564,7 @@
     <!--==============================
     Appointment Form Area 
     ==============================-->
-    <section class="appointment-wrapper space-top space-md-bottom">
+    <section class="appointment-wrapper space-top space-md-bottom" id="appointmentId">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 mb-30">
@@ -840,8 +841,8 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
-                        <div class="row vs-carousel wow fadeInUp" data-wow-delay="0.3s" data-slide-show="2">
-                            <div class="col-xl-6">
+                        <div class="row vs-carousel2 wow fadeInUp" data-wow-delay="0.3s" data-slide-show="2">
+                            <div class="col-md-6">
                                 <div class="testimonial-box mb-30 bg-white">
                                     <div class="content">
                                         <p class="fs-md">From the moment I entered Kinesia,
@@ -870,7 +871,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-md-6">
                                 <div class="testimonial-box mb-30 bg-white">
                                     <div class="content">
                                         <p class="fs-md">The journey from consultation to
@@ -899,31 +900,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-xl-6">
-                                <div class="testimonial-box mb-30 bg-white">
-                                    <div class="content">
-                                        <p class="fs-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et</p>
-                                    </div>
-                                    <div class="author-img">
-                                        <div class="avater-line"></div>
-                                        <div class="avater">
-                                            <img src="assets/img/no img.png" alt="Author Image">
-                                        </div>
-                                    </div>
-                                    <div class="author-info">
-                                        <div class="info">
-                                            <h3 class="fs-20 name">Patient Name</h3>
-                                            <span class="fs-xs degi text-theme">2024/1/2</span>
-                                        </div>
-                                        <div class="testi-rating">
-                                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
-                                                    style="width:100%">Rated <strong class="rating">5.00</strong> out of
-                                                    5</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -1110,8 +1087,11 @@
                             <h3 class="widget_title">About Us</h3>
                             <div class="vs-widget-about">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam risus, lobortis
-                                    ac interdum rhoncus, egestas vitae elit.</p>
+                                    At Kinesia we merge innovation
+                                    and indulgence for a truly elite physiotherapy experience.
+                                    Experience healing in a sanctuary designed to restore your health with
+                                    sophistication and care.
+                                </p>
                                 <h4><a class="text-theme hover-white" href="tel:009651888179"><i
                                             class="fas fa-phone-volume me-2 pe-1"></i> +9651888179</a></h4>
                                 <!-- <div class="d-flex mt-3 pt-1">
@@ -1128,22 +1108,6 @@
                     </div>
                     <div class="col-md-6 col-lg-auto col-xl-auto">
                         <div class="widget footer-widget widget_nav_menu   ">
-                            <h3 class="widget_title">Services</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="#">Body Surgery</a></li>
-                                    <li><a href="#">Major Operation</a></li>
-                                    <li><a href="#">Child Care</a></li>
-                                    <li><a href="#">Heart Surgery</a></li>
-                                    <li><a href="#">Mental Health</a></li>
-                                    <li><a href="#">Urgent Care</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-auto col-xl-auto">
-                        <div class="widget footer-widget widget_nav_menu   ">
                             <h3 class="widget_title">Links</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
@@ -1157,6 +1121,30 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-auto col-xl-auto">
+                        <div class="widget footer-widget widget_nav_menu   ">
+                            <h3 class="widget_title">Clinical Services</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a >Therapeutic exercises</a></li>
+                                    <li><a >Educational sessions</a></li>
+
+                                </ul>
+                            </div>
+                            <br>
+
+                            <h3 class="widget_title">Educational Services
+                            </h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a>Monthly workshops</a></li>
+                                    <li><a>Scientific seminars</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- <div class="col-md-6 col-lg-3 col-xl-auto">
                         <div class="widget footer-widget  ">
                             <h4 class="widget_title">Gallery Posts</h4>
@@ -1194,16 +1182,8 @@
                             <div class="footer-table">
                                 <table>
                                     <tr>
-                                        <td>Mon - Fri:</td>
-                                        <td>8:00 am - 8:00 pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday:</td>
-                                        <td>9:00 am - 6:00 pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sunday:</td>
-                                        <td>9:00 am - 6:00 pm</td>
+                                        <td>Saturday - Thursday:</td>
+                                        <td>9:00 am - 8:00 pm</td>
                                     </tr>
                                 </table>
                             </div>
@@ -1258,9 +1238,9 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- <script src="assets/js/app.min.js"></script> -->
     <!-- Layerslider -->
-    <!-- <script src="assets/js/layerslider.utils.js"></script>
+    <script src="assets/js/layerslider.utils.js"></script>
     <script src="assets/js/layerslider.transitions.js"></script>
-    <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script> -->
+    <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- jQuery Datepicker -->
@@ -1280,6 +1260,8 @@
     <script src="assets/js/ajax-mail.js"></script>
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slickJs.js"></script>
+
     <!-- <script>
 
         // Event listener for changing language to Arabic

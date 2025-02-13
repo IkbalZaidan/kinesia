@@ -1290,7 +1290,7 @@ textarea.form-control.is-invalid {
   max-height: 58vh;
   padding-bottom: 40px;
   margin-top: 33px;
-  text-align: left;
+  text-align: start;
 }
 
 .vs-mobile-menu .new-label {
@@ -1335,6 +1335,8 @@ textarea.form-control.is-invalid {
   margin-inline-end: 10px;
   display: inline-block;
 }
+
+
 
 .vs-mobile-menu ul li.vs-active>a {
   color: var(--theme-color);
@@ -7926,7 +7928,7 @@ textarea.form-control.is-invalid {
 .breadcumb-menu li {
   display: inline-block;
   margin-inline-end: 3px;
-  padding-right: 13px;
+  padding-inline-end: 13px;
   list-style: none;
   position: relative;
 }
@@ -20804,11 +20806,7 @@ body {
   /* Small devices */
 }
 
-@media (max-width: 767px) {
-  .custom-top-space {
-    padding-top: 204px;
-  }
-}
+
 
 .text-title-primary {
   color: var(--theme-color) !important;
@@ -20824,7 +20822,7 @@ body {
 
 .vs-hero-wrapper p {
 
-  width: 605px;
+  width: auto;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -20925,4 +20923,9 @@ body {
 [dir="rtl"] .slick-next {
   left: 10px;
   right: auto;
+}
+
+.force-ltr{
+  direction: ltr !important;
+  justify-self: start;
 }

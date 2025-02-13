@@ -1,3 +1,7 @@
+body {
+  direction: rtl !important;
+}
+
 .footer-widget .widget_title:before {
   right: 0;
 }
@@ -46,7 +50,7 @@
 }
 
 .text-xl-start {
-  text-align: right !important;
+  text-align: right ;
 }
 
 .address-line i{
@@ -71,4 +75,54 @@
   padding-left: unset;
   margin-left: unset;
 
+}
+
+/* .vs-carousel {
+  direction: rtl !important;
+}
+
+.vs-carousel .slick-track,
+.vs-carousel .owl-stage {
+  transform: none !important;
+} */
+
+ .vs-carousel {
+  direction: rtl !important;
+}
+
+
+.vs-mobile-menu ul li a:before {
+  /* left: unset;
+  right: 0;
+  transform: rotate(180deg); */
+  display: none;
+}
+
+.form-group>i{
+  left: 30px;
+  right: unset;
+}
+
+.form-select{
+  background-position: left 1.3rem center;
+}
+
+.form-select.style3,
+.form-select.style2,
+.form-control.style3,
+.form-control.style2 {
+  padding-right: 30px;
+}
+
+.form-select.style3~i,
+.form-select.style2~i,
+.form-control.style3~i,
+.form-control.style2~i {
+  left: calc(var(--bs-gutter-x) + 15px);
+  right: unset;
+}
+
+.breadcumb-menu li:after{
+  left: 0;
+  right: unset;
 }

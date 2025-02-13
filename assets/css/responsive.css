@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .custom-top-space {
+        padding-top: 204px;
+    }
+
+    .rev-mob {
+        flex-direction: row-reverse !important;
+    }
+
+    .vs-hero-wrapper h1 {
+        font-size: 40px;
+    }
+
+    .vs-hero-wrapper{
+        height: 70vh !important;
+    }
+}
