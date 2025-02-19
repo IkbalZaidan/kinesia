@@ -126,3 +126,23 @@ body {
   left: 0;
   right: unset;
 }
+
+.member-info-list li:before{
+  left: unset;
+  right: 0;
+}
+
+.member-info-list li{
+  padding-left: unset;
+  padding-right: 25px;
+}
+
+.border-title:before{
+  left: unset;
+  right: 0;
+}
+
+.title-divider:before, .title-divider:after{
+  left: unset;
+  right: 0;
+}

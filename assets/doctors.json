@@ -1,0 +1,58 @@
+[
+    {
+      "id": "1",
+      "image": "assets/img/team/jawad.jpeg",
+      "name": "Dr. Jawad Fadel Abulhasan",
+      "specialty": "Physiotherapist",
+      "description": "Dr. Jawad Abulhasan is a distinguished physiotherapist with a Ph.D. from the University of Birmingham and extensive experience in sports medicine and rehabilitation. As the founder and director of Kinesia Physiotherapy Center, he combines advanced clinical expertise with a commitment to patient-centered care.",
+      "degree": "Ph.D. in Physiotherapy",
+      "areas_of_expertise": ["Sports Medicine", "Rehabilitation", "Pain Management"],
+      "university": "University of Birmingham",
+      "phone": "+965 66667770"
+    },
+    {
+      "id": "2",
+      "image": "assets/img/team/khaled.jpeg",
+      "name": "Khalid Nafa",
+      "specialty": "Physiotherapist",
+      "description": "Khalid Nafa is a skilled physiotherapist with experience in rehabilitation, injury recovery, and sports therapy. He specializes in manual therapy, dry needling, and recovery management, providing personalized treatment plans to enhance patient well-being.",
+      "degree": "Bachelor’s in Physical Therapy",
+      "areas_of_expertise": ["Rehabilitation", "Dry Needling", "Manual Therapy"],
+      "university": "Jordan University of Science and Technology",
+      "phone": "+965 96637836"
+    },
+    {
+      "id": "3",
+      "name": "Suad AlShammari",
+      "image": "assets/img/team/suad.jpeg",
+      "specialty": "Physiotherapist",
+      "description": "Suad AlShammari is an experienced physiotherapist specializing in musculoskeletal pain, sports injuries, and women's health. With a background in rehabilitation and neurological disorders, she focuses on enhancing patient mobility and recovery.",
+      "degree": "Bachelor’s in Physical Therapy",
+      "areas_of_expertise": ["Musculoskeletal Pain", "Sports Injuries", "Neurological Disorders", "Women's Health"],
+      "university": "Kuwait University",
+      "phone": "Not Available"
+    },
+    {
+      "id": "4",
+      "image": "assets/img/team/dema.jpeg",
+      "name": "Deema Bitar",
+      "specialty": "Physiotherapist",
+      "description": "Deema Bitar is a dedicated physiotherapist with expertise in women's health, sports rehabilitation, and musculoskeletal pain. Holding a master's in physiotherapy, she focuses on injury recovery, balance improvement, and postnatal fitness.",
+      "degree": "Master’s in Physical Therapy",
+      "areas_of_expertise": ["Women's Health", "Sports Rehabilitation", "Musculoskeletal Pain"],
+      "university": "University of Sharjah",
+      "phone": "Not Available"
+    },
+    {
+      "id": "5",
+      "image": "assets/img/team/ali.jpeg",
+      "name": "Aly H. Alatar",
+      "specialty": "Physiotherapist & Researcher",
+      "description": "Aly H. Alatar is a physiotherapist, researcher, and public speaker specializing in spine health, pain management, and behavioral psychology. With a Ph.D. from the University of Birmingham, he actively contributes to health awareness, education, and research, sharing his expertise through lectures, publications, and community initiatives.",
+      "degree": "Ph.D. in Physiotherapy & Psychology",
+      "areas_of_expertise": ["Spine Health", "Pain Management", "Behavioral Psychology"],
+      "university": "University of Birmingham",
+      "phone": "+965 97504076"
+    }
+  ]
+  

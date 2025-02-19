@@ -14,4 +14,8 @@
     .vs-hero-wrapper{
         height: 70vh !important;
     }
+
+    .text-mob-center {
+        text-align: center;
+    }
 }
