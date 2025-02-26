@@ -20953,3 +20953,7 @@ body {
   /* Prevents long words from overflowing */
   margin-bottom: 20px;
 }
+
+.intro-video{
+  height: 700px !important;
+}
