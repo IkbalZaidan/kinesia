@@ -8,7 +8,7 @@
     }
 
     .vs-hero-wrapper h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     .vs-hero-wrapper{
@@ -17,5 +17,9 @@
 
     .text-mob-center {
         text-align: center;
+    }
+
+    .mob-show{
+        display: inline-block;
     }
 }

@@ -374,7 +374,6 @@ About Area
                             <p class="media-text"><a href="tel:+4412345996">+44-1234-5996</a></p>
                         </div>
                     </div> -->
-                        <a href="#" class="vs-btn"> المزيد</a>
                     </div>
                 </div>
             </div>
@@ -532,85 +531,8 @@ Accordion Area
                 </div>
             </div>
             <div class="row vs-carousel wow fadeIn" data-wow-delay="0.3s" data-arrows="true" data-slide-show="3"
-                data-lg-slide-show="2">
-                <div class="col-xl-4">
-                    <div class="vs-project-box mb-30">
-                        <div class="project-img">
-                            <img src="assets/img/team/jawad.jpeg" alt="Project Image" class="w-100">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-cat fs-xs">أخصائي علاج طبيعي</span>
-                            <h4 class="project-name">
-                                <a href="">
-                                    د. جواد فاضل أبوالحسن
-                                </a>
-                            </h4>
-                            <a href="team-details.html?id=1" class="icon-btn style4"><i class="fal fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-project-box mb-30">
-                        <div class="project-img">
-                            <img src="assets/img/team/khaled.jpeg" alt="Project Image" class="w-100">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-cat fs-xs">أخصائي علاج طبيعي</span>
-                            <h4 class="project-name">
-                                <a href="">
-                                    د.خالد نافع
-                                </a>
-                            </h4>
-                            <a href="team-details.html?id=2" class="icon-btn style4"><i class="fal fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-project-box mb-30">
-                        <div class="project-img">
-                            <img src="assets/img/team/suad.jpeg" alt="Project Image" class="w-100">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-cat fs-xs">أخصائي علاج طبيعي</span>
-                            <h4 class="project-name">
-                                <a href="">
-                                    د.سعاد الشمري
-                                </a>
-                            </h4>
-                            <a href="team-details.html?id=3" class="icon-btn style4"><i class="fal fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-project-box mb-30">
-                        <div class="project-img">
-                            <img src="assets/img/team/dema.jpeg" alt="Project Image" class="w-100">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-cat fs-xs">أخصائي علاج طبيعي</span>
-                            <h4 class="project-name">
-                                <a href="">
-                                    د.ديمة بيطار </a>
-                            </h4>
-                            <a href="team-details.html?id=4" class="icon-btn style4"><i class="fal fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="vs-project-box mb-30">
-                        <div class="project-img">
-                            <img src="assets/img/team/ali.jpeg" alt="Project Image" class="w-100">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-cat fs-xs">أخصائي علاج طبيعي</span>
-                            <h4 class="project-name">
-                                <a href="">
-                                    د.علي العطار </a>
-                            </h4>
-                            <a href="team-details.html?id=5" class="icon-btn style4"><i class="fal fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div>
+                data-lg-slide-show="2" id="team-container">
+            
             </div>
         </div>
     </section>
@@ -1024,7 +946,63 @@ Testimonial Area
 
 
     </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const teamContainer = document.getElementById('team-container');
 
+        fetch('assets/doctorsAr.json')
+            .then(response => response.json())
+            .then(data => {
+                let teamCards = ''; // Collect all cards first
+                data.forEach(member => {
+                    teamCards += `
+            <div class="col-xl-4">
+                <div class="vs-project-box mb-30">
+                    <div class="project-img">
+                        <img src="${member.image}" alt="${member.name}" class="w-100">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-cat fs-xs">${member.specialty}</span>
+                        <h4 class="project-name">
+                            <a href="">${member.name}</a>
+                        </h4>
+                        <a href="team-detailsAr.html?id=${member.id}" class="icon-btn style4"><i class="fal fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            `;
+                });
+
+                teamContainer.innerHTML = teamCards; // Update the DOM once
+
+                // **Reinitialize the carousel after adding elements**
+                setTimeout(() => {
+                    $(".vs-carousel").slick("unslick");
+                    $(".vs-carousel").slick({
+                        rtl: true,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        dots: true,
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    arrows: false,
+                                    dots: true
+                                }
+                            }
+                        ]
+                    });
+                }, 500); // Small delay to ensure content is loaded
+
+            })
+            .catch(error => console.error('Error loading team data:', error));
+    });
+</script>
 </body>
 
 </html>

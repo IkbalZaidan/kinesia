@@ -1326,7 +1326,7 @@ textarea.form-control.is-invalid {
   color: var(--title-color);
 }
 
-.vs-mobile-menu ul li a:before {
+/* .vs-mobile-menu ul li a:before {
   content: "\f105";
   font-family: var(--icon-font);
   position: relative;
@@ -1334,7 +1334,7 @@ textarea.form-control.is-invalid {
   top: 0;
   margin-inline-end: 10px;
   display: inline-block;
-}
+} */
 
 
 
@@ -20956,4 +20956,12 @@ body {
 
 .intro-video{
   height: 700px !important;
+}
+
+.mob-show{
+  display: none ;
+}
+
+.footer-bottom-menu{
+  display: none;
 }
