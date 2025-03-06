@@ -92,7 +92,7 @@
   },
   {
     "id": "7",
-    "image": "assets/img/team/mahmod.jpeg",
+    "image": "assets/img/team/mahmod.jpg",
     "name": "Dr. Mahmood Abdulhadi",
     "specialty": "Physical Therapist",
     "description": "Mahmood Abdulhadi is a passionate and skilled physical therapist specializing in sports injuries, rehabilitation, and patient care. He provides tailored treatment plans using advanced techniques to promote recovery and improve physical performance.",
@@ -126,7 +126,7 @@
   },
   {
     "id": "9",
-    "image": "assets/img/team/no img.png",
+    "image": "assets/img/team/mariam.jpeg",
     "name": "Dr. Mariam AlKandari",
     "specialty": "Physical Therapist",
     "description": "Mariam AlKandari is a skilled physiotherapist and certified dry needling practitioner with seven years of experience. She specializes in ankle and foot injuries and rehabilitation. Additionally, she is a certified breastfeeding counselor and educator, helping new moms navigate their maternity and breastfeeding journey.",
@@ -140,6 +140,66 @@
     "university": "Kuwait University",
     "phone": "Not Available",
     "email": "Not Available"
+  },
+  {
+    "id": "10",
+    "image": "assets/img/team/no img.png",
+    "name": "Moath Aziz Bander",
+    "specialty": "Physical Therapist",
+    "description": "Moath Aziz Bander is a dedicated physical therapist specializing in sports rehabilitation and training. He has experience in treating patients with various conditions, including orthopedic, cardiovascular, respiratory, and neurological disorders. He is also a certified dry needling practitioner and blood flow restriction trainer.",
+    "degree": "Bachelor of Physical Therapy",
+    "areas_of_expertise": [
+      "Sports Rehabilitation",
+      "Orthopedic and Sports Rehabilitation",
+      "Blood Flow Restriction Training",
+      "Dry Needling",
+      "Patient Care"
+    ],
+    "university": "Kuwait University",
+    "phone": "Not Available",
+    "email": "M3athaziz@gmail.com"
+  },
+  {
+    "id": "11",
+    "image": "assets/img/team/no img.png",
+    "name": "Aya Emad Othman Hasan",
+    "specialty": "Physical Therapist",
+    "description": "Aya Emad Othman Hasan is an experienced physiotherapist with expertise in post-operative rehabilitation, injury assessment, and movement retraining. She has worked in multiple healthcare facilities and has certifications in dry needling, kinesiology taping, and McKenzie therapy for the lumbar spine.",
+    "degree": "Bachelor of Physiotherapy",
+    "areas_of_expertise": [
+      "Post-Operative Rehabilitation",
+      "Injury Assessment and Management",
+      "Dry Needling",
+      "Kinesiology Taping",
+      "Mechanical Diagnosis and Treatment (McKenzie Approach)",
+      "Sacroiliac Joint Dysfunction Management",
+      "Movement Retraining"
+    ],
+    "university": "The University of Jordan",
+    "phone": "+965 97513738",
+    "email": "pt.ayahasan@gmail.com"
+  },{
+    "id": "12",
+    "image": "assets/img/team/no img.png",
+    "name": "Ahmed Salem Al Banwa",
+    "specialty": "Licensed Senior Physiotherapist",
+    "description": "Ahmed Salem Al Banwa is a licensed senior physiotherapist and co-founder of Kinesia Physiotherapy Center. He holds a Bachelor's and Doctorate in Physical Therapy, with over 20 years of clinical experience in musculoskeletal conditions, specializing in tendinopathy, sports rehabilitation, sports medicine, performance enhancement, and injury prevention. Additionally, he is an experienced runner who has completed five major marathons and is a certified running coach with a special qualification in running injuries. He has participated in numerous conferences and courses and has organized and presented workshops related to tendinopathy and running injuries.",
+    "degree": "Bachelor's and Doctorate in Physical Therapy",
+    "areas_of_expertise": [
+      "Tendinopathy Treatment",
+      "Sports Rehabilitation",
+      "Sports Medicine",
+      "Sports Performance Enhancement",
+      "Injury Prevention",
+      "Running Injuries",
+      "Workshop and Conference Presentations"
+    ],
+    "university": "Not Available",
+    "phone": "Not Available",
+    "email": "Not Available"
   }
+  
+  
+  
   
 ]
