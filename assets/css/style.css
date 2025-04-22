@@ -5260,6 +5260,10 @@ textarea.form-control.is-invalid {
   font-size: 16px;
 }
 
+.header-social a i{
+  margin-inline: 10px;
+}
+
 .header-search-btn {
   color: #698fd0;
   font-size: 12px;
