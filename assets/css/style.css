@@ -414,7 +414,7 @@ h6 {
   }
 
   .container-style1 {
-    max-width: 1400px;
+    max-width: 1600px;
   }
 
   .vs-container {
@@ -20966,6 +20966,11 @@ body {
   display: none ;
 }
 
-.footer-bottom-menu{
-  display: none;
+.searchbtn{
+  font-size: 13px !important;
+  background: #ffffff42;
+  padding-block: 6px;
+  padding-inline-start: 2px;
+  padding-inline-end: 15px;
+  border-radius: 25px;
 }
