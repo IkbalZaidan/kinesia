@@ -83,6 +83,19 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
+    
+                // Wait for the header to be inserted, then attach event listener
+                const arabicLink = document.getElementById('switchToArabic');
+                if (arabicLink) {
+                    arabicLink.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const currentUrl = window.location.pathname;
+                        const fileName = currentUrl.substring(currentUrl.lastIndexOf('/') + 1) || 'index.html';
+                        const arFileName = fileName.replace(/(\.html)$/, 'Ar$1');
+                        const newUrl = currentUrl.replace(fileName, arFileName);
+                        window.location.href = newUrl;
+                    });
+                }
             });
     </script>
 

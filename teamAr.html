@@ -80,6 +80,18 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
+                // English switch (remove "Ar" before .html)
+                const englishLink = document.getElementById('switchToEnglish');
+                if (englishLink) {
+                    englishLink.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const currentUrl = window.location.pathname;
+                        const fileName = currentUrl.substring(currentUrl.lastIndexOf('/') + 1) || 'indexAr.html';
+                        const enFileName = fileName.replace('Ar.html', '.html');
+                        const newUrl = currentUrl.replace(fileName, enFileName);
+                        window.location.href = newUrl;
+                    });
+                }
             });
     </script>
 
@@ -104,7 +116,7 @@
     <section class="vs-team-wrapper space">
         <div class="container" style="justify-items:center">
             <div id="team-container" class="row"></div>
-            <a href="https://forms.gle/1MrhXViw7dMFTHVe6" target="_blank" class="vs-btn">كن عضوًا في فريق كاينيزيا  </a>
+            <a href="https://forms.gle/1MrhXViw7dMFTHVe6" target="_blank" class="vs-btn">كن عضوًا في فريق كاينيزيا </a>
 
         </div>
     </section>

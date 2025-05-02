@@ -76,6 +76,18 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
+                // English switch (remove "Ar" before .html)
+                const englishLink = document.getElementById('switchToEnglish');
+                if (englishLink) {
+                    englishLink.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const currentUrl = window.location.pathname;
+                        const fileName = currentUrl.substring(currentUrl.lastIndexOf('/') + 1) || 'indexAr.html';
+                        const enFileName = fileName.replace('Ar.html', '.html');
+                        const newUrl = currentUrl.replace(fileName, enFileName);
+                        window.location.href = newUrl;
+                    });
+                }
             });
     </script>
     <!--==============================
@@ -578,7 +590,8 @@
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <a href="https://forms.gle/1MrhXViw7dMFTHVe6" target="_blank" class="vs-btn">كن عضوًا في فريق كاينيزيا  </a>
+                    <a href="https://forms.gle/1MrhXViw7dMFTHVe6" target="_blank" class="vs-btn">كن عضوًا في فريق
+                        كاينيزيا </a>
                 </div>
             </div>
         </div>
@@ -1134,11 +1147,13 @@
                                     الديسك: الأعراض وطرق الاهتمام
                                 </a>
                             </h3>
-                        
+
                             <p>
-                                يحدث الديسك نتيجة انزلاق غضروفي بين فقرات العمود الفقري، وقد يسبب آلامًا في الظهر أو الأطراف وصعوبة في الحركة.<br>
-                                يتطلب الاهتمام به الالتزام بالعلاج الطبيعي، تجنب الحركات الخاطئة، وممارسة التمارين التي تدعم صحة العمود الفقري.
-                            </p>
+                                يحدث الديسك نتيجة انزلاق غضروفي بين فقرات العمود الفقري، وقد يسبب آلامًا في الظهر أو
+                                الأطراف وصعوبة في الحركة.<br>
+                                يتطلب الاهتمام به الالتزام بالعلاج الطبيعي، تجنب الحركات الخاطئة، وممارسة التمارين التي
+                                تدعم صحة العمود الفقري.
+                                    </p>
                         </div>
 
                     </div>
@@ -1161,11 +1176,13 @@
                                     الاهتمام بالركبة ومشاكل خشونة الركبة
                                 </a>
                             </h3>
-                        
+
                             <p>
-                                تعتبر الركبة من المفاصل الحيوية التي تتحمل عبئًا كبيرًا في حياتنا اليومية، ويؤثر إهمالها بشكل مباشر على جودة الحركة.<br>
-                                يشمل الاهتمام بها الوقاية من الخشونة من خلال التمارين المناسبة، والحفاظ على الوزن، والمتابعة الطبية المستمرة لتجنب المضاعفات.
-                            </p>
+                                تعتبر الركبة من المفاصل الحيوية التي تتحمل عبئًا كبيرًا في حياتنا اليومية، ويؤثر إهمالها
+                                بشكل مباشر على جودة الحركة.<br>
+                                يشمل الاهتمام بها الوقاية من الخشونة من خلال التمارين المناسبة، والحفاظ على الوزن،
+                                والمتابعة الطبية المستمرة لتجنب المضاعفات.
+                                    </p>
                         </div>
                     </div>
                 </div>
